@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row d-flex justify-content-around flex-wrap">
+        <div class="carta" (click)="cartaClicada.emit()" [@cartaVira]="carta.state">
+            <div class="lado verso">
+                <img src="../../assets/img/verso-carta-memoria.png">
+            </div>
+            <div class="lado frente">
+                <img [src]="'assets/img/' + carta.idImagem ">
+            </div>
+        </div>  
+    </div>
+</div>
+
